@@ -1,10 +1,13 @@
 package id.ac.um.ukm.asc.myalquran
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.item_surah.view.*
 
 class SurahAdapter (private val context : Context, private val surahList : ArrayList<Surah>)
@@ -16,6 +19,9 @@ class SurahAdapter (private val context : Context, private val surahList : Array
                 txt_meaning.text = surah.arti
                 txt_title.text = surah.nama
                 txt_title_arabic.text = surah.asma
+                setOnClickListener {
+                    Snackbar.make(itemView.rootView, "${surah.nama}", Snackbar.LENGTH_SHORT).show()
+                }
             }
         }
 
