@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My AlQuran</string>
+    <string name="number_surah">114</string>
+    <string name="title_surah">Judul Surah</string>
+    <string name="meaning_surah">Arti surah</string>
+    <string name="title_surah_in_arabic">Judul Surah bahasa arab</string>
+    <string name="alquran">Al-Qur\'an</string>
+</resources>
